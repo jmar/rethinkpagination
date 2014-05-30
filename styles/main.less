@@ -1,0 +1,182 @@
+// Normally you could import the bootstrap.less from original repository
+// but if you want to modify which contents get included you have to modify
+// that file and lose maintabilty
+//@import "../bower_components/bootstrap/less/bootstrap.less";
+// Core variables and mixins
+@import "variables.less";
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+// Reset
+@import "../bower_components/bootstrap/less/normalize.less";
+@import "../bower_components/bootstrap/less/print.less";
+// Core CSS
+@import "../bower_components/bootstrap/less/scaffolding.less";
+@import "../bower_components/bootstrap/less/type.less";
+@import "../bower_components/bootstrap/less/code.less";
+@import "../bower_components/bootstrap/less/grid.less";
+@import "../bower_components/bootstrap/less/tables.less";
+@import "../bower_components/bootstrap/less/forms.less";
+@import "../bower_components/bootstrap/less/buttons.less";
+// Components
+@import "../bower_components/bootstrap/less/component-animations.less";
+//@import "../bower_components/bootstrap/less/glyphicons.less";
+//@import "../bower_components/bootstrap/less/dropdowns.less";
+//@import "../bower_components/bootstrap/less/button-groups.less";
+@import "../bower_components/bootstrap/less/input-groups.less";
+@import "../bower_components/bootstrap/less/navs.less";
+@import "../bower_components/bootstrap/less/navbar.less";
+@import "../bower_components/bootstrap/less/breadcrumbs.less";
+//@import "../bower_components/bootstrap/less/pagination.less";
+//@import "../bower_components/bootstrap/less/pager.less";
+@import "../bower_components/bootstrap/less/labels.less";
+//@import "../bower_components/bootstrap/less/badges.less";
+//@import "../bower_components/bootstrap/less/jumbotron.less";
+@import "../bower_components/bootstrap/less/thumbnails.less";
+//@import "../bower_components/bootstrap/less/alerts.less";
+//@import "../bower_components/bootstrap/less/progress-bars.less";
+//@import "../bower_components/bootstrap/less/media.less";
+//@import "../bower_components/bootstrap/less/list-group.less";
+//@import "../bower_components/bootstrap/less/panels.less";
+//@import "../bower_components/bootstrap/less/wells.less";
+//@import "../bower_components/bootstrap/less/close.less";
+// Components w/ JavaScript
+//@import "../bower_components/bootstrap/less/modals.less";
+//@import "../bower_components/bootstrap/less/tooltip.less";
+//@import "../bower_components/bootstrap/less/popovers.less";
+//@import "../bower_components/bootstrap/less/carousel.less";
+// Utility classes
+@import "../bower_components/bootstrap/less/utilities.less";
+@import "../bower_components/bootstrap/less/responsive-utilities.less";
+
+@icon-font-path: "../fonts/glyphicons/";
+
+@import "animate.less";
+
+.forkme-top {
+  z-index: 2000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  position: relative;
+  z-index: 0;
+  padding-top: 50px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  color: #666;
+}
+
+h1 {
+  margin: 10px 0px;
+  color: @gray;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  margin: 30px 0px 10px 0;
+  color: @brand-primary;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 400;
+  // text-transform: uppercase;
+}
+
+h3 {
+  margin-right: 0px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: @brand-primary;
+  font-size: 24px;
+  line-height: 1.4em;
+  font-weight: 300;
+  // text-transform: uppercase;
+}
+
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h5 {
+  margin: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+p, ul {
+  margin-bottom: 5px;
+  // font-size: 16px;
+  line-height: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: #7BAADA;
+  background-image: url(http://jensmartsch.de/site/templates/styles/images/header4.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  h1 {
+    margin-bottom: 20px;
+  }
+  .row{
+    margin-top: 20px;
+  }
+}
+
+#logo {
+}
+
+.since {
+  font-size: 24px;
+  line-height: 1.4em;
+}
+
+.gray {
+  background: #e5f6ff;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+code{
+  display: block;
+}

@@ -1,0 +1,419 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>rethinkPagination - a jquery pagination plugin by Jens Martsch</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+	<!-- build:css styles/rethinkpagination.css -->
+    <link rel="stylesheet" href="styles/rethinkpagination.css">
+    <!-- endbuild -->
+    <!-- <link rel="stylesheet" href="bower_components/animate.css/animate.min.css"> -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#header">
+   
+    <nav id="header" class="navbar navbar-default navbar-fixed-top bg-white" data-spy="affix" data-offset-top="200">
+        <div class="container"> <a class="navbar-brand" href="#">rethinkPagination</a>
+
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav"> <i class="fa fa-reorder"></i> -->
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                <span class="sr-only">Zeige Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="start active"><a href="#top">Home</a>
+                    </li>
+                    <li> <a href="#about">About</a>
+                    </li>
+                    <li> <a href="#installation">Installation</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header text-center" id="top">
+        <div class="container">
+            <img src="images/logo.png" alt="rethinkPagination" id="logo">
+
+            <h1>
+                Scrollable pagination with tooltip previews of the of the page you would like to visit. This is a UX design pattern accompanied by a jQuery plugin.
+            </h1>
+            <iframe src="http://ghbtns.com/github-btn.html?user=jmar&repo=rethinkpagination&type=fork&size=large"
+              allowtransparency="true" frameborder="0" scrolling="0" width="95" height="30"></iframe>
+            <iframe src="http://ghbtns.com/github-btn.html?user=jmar&repo=rethinkpagination&type=watch&size=large"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="95" height="30"></iframe>
+            <div class="row">
+                <div class="col-sm-6">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="J3PRMJWHCNUPL">
+                        <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_LG.gif"
+                               border="0" name="submit"
+                               alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1"
+                             height="1">
+                    </form>
+                    If you like the plugin and want to support development please donate.
+                </div>
+                <div class="col-sm-6">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img
+                            alt="Creative Commons License" style="border-width:0"
+                            src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a><br/>This work is licensed
+                    under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+                    Attribution-ShareAlike 4.0 International License</a>.
+                </div>
+            </div>
+    </div>
+</div>
+
+
+    <section class="container" id="content">
+
+        <h3>Full-blown example with Sly (nice Scrollbars, mouse wheel scrolling) and animate.css<br>Hover over the links!</h3>
+        <div class="wrap">
+            <ul class="pagination" id="slydemo">
+                <li><a href="page.html">1</a>
+                </li>
+                <li><a href="page.html">2</a>
+                </li>
+                <li><a href="page.html">3</a>
+                </li>
+                <li><a href="page.html">4</a>
+                </li>
+                <li><a href="page.html">5</a>
+                </li>
+                <li><a href="page.html">6</a>
+                </li>
+                <li><a href="page.html">7</a>
+                </li>
+                <li><a href="page.html">8</a>
+                </li>
+                <li><a href="page.html">9</a>
+                </li>
+                <li><a href="page.html">10</a>
+                </li>
+                <li><a href="page.html">11</a>
+                </li>
+                <li><a href="page.html">12</a>
+                </li>
+                <li><a href="page.html">13</a>
+                </li>
+                <li><a href="page.html">14</a>
+                </li>
+                <li><a href="page.html">15</a>
+                </li>
+                <li><a href="page.html">16</a>
+                </li>
+                <li><a href="page.html">17</a>
+                </li>
+                <li><a href="page.html">18</a>
+                </li>
+                <li><a href="page.html">19</a>
+                </li>
+                <li><a href="page.html">20</a>
+                </li>
+                <li><a href="page.html">21</a>
+                </li>
+                <li><a href="page.html">22</a>
+                </li>
+                <li><a href="page.html">23</a>
+                </li>
+                <li><a href="page.html">24</a>
+                </li>
+                <li><a href="page.html">25</a>
+                </li>
+                <li><a href="page.html">26</a>
+                </li>
+                <li><a href="page.html">27</a>
+                </li>
+                <li><a href="page.html">28</a>
+                </li>
+                <li><a href="page.html">29</a>
+                </li>
+                <li><a href="page.html">30</a>
+                </li>
+                <li><a href="page.html">31</a>
+                </li>
+                <li><a href="page.html">32</a>
+                </li>
+                <li><a href="page.html">33</a>
+                </li>
+                <li><a href="page.html">34</a>
+                </li>
+                <li><a href="page.html">35</a>
+                </li>
+                <li><a href="page.html">36</a>
+                </li>
+                <li><a href="page.html">37</a>
+                </li>
+                <li><a href="page.html">38</a>
+                </li>
+                <li><a href="page.html">39</a>
+                </li>
+                <li><a href="page.html">40</a>
+                </li>
+            </ul>
+            <div class="scrollbar">
+                <div class="handle">
+                    <div class="mousearea"></div>
+                </div>
+            </div>
+        </div>
+        <h3>Bare-bones example with standard scrollbars and no animation</h3>
+        <div class="wrap">
+            <ul class="rethinkpagination pagination">
+                <li><a href="page.html">1</a>
+                </li>
+                <li><a href="page.html">2</a>
+                </li>
+                <li><a href="page.html">3</a>
+                </li>
+                <li><a href="page.html">4</a>
+                </li>
+                <li><a href="page.html">5</a>
+                </li>
+                <li><a href="page.html">6</a>
+                </li>
+                <li><a href="page.html">7</a>
+                </li>
+                <li><a href="page.html">8</a>
+                </li>
+                <li><a href="page.html">9</a>
+                </li>
+                <li><a href="page.html">10</a>
+                </li>
+                <li><a href="page.html">11</a>
+                </li>
+                <li><a href="page.html">12</a>
+                </li>
+                <li><a href="page.html">13</a>
+                </li>
+                <li><a href="page.html">14</a>
+                </li>
+                <li><a href="page.html">15</a>
+                </li>
+                <li><a href="page.html">16</a>
+                </li>
+                <li><a href="page.html">17</a>
+                </li>
+                <li><a href="page.html">18</a>
+                </li>
+                <li><a href="page.html">19</a>
+                </li>
+                <li><a href="page.html">20</a>
+                </li>
+                <li><a href="page.html">21</a>
+                </li>
+                <li><a href="page.html">22</a>
+                </li>
+                <li><a href="page.html">23</a>
+                </li>
+                <li><a href="page.html">24</a>
+                </li>
+                <li><a href="page.html">25</a>
+                </li>
+                <li><a href="page.html">26</a>
+                </li>
+                <li><a href="page.html">27</a>
+                </li>
+                <li><a href="page.html">28</a>
+                </li>
+                <li><a href="page.html">29</a>
+                </li>
+                <li><a href="page.html">30</a>
+                </li>
+                <li><a href="page.html">31</a>
+                </li>
+                <li><a href="page.html">32</a>
+                </li>
+                <li><a href="page.html">33</a>
+                </li>
+                <li><a href="page.html">34</a>
+                </li>
+                <li><a href="page.html">35</a>
+                </li>
+                <li><a href="page.html">36</a>
+                </li>
+                <li><a href="page.html">37</a>
+                </li>
+                <li><a href="page.html">38</a>
+                </li>
+                <li><a href="page.html">39</a>
+                </li>
+                <li><a href="page.html">40</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="gray" id="about">
+        <div class="container">
+            <h2>
+                Nowadays Pagination has three major problems
+            </h2>
+                <h3>Too many clicks are needed to go to a specific page</h3>
+                <p>
+                    For example you know the article you are looking for is on page 11 but the pagination only provides pages 1-10 and a "next" link. So you have to click that "next" link, wait for the page to load, scroll down and finally select page 11.
+                    <em>What if you wanted to go to page 100 instead?</em>
+                </p>
+                <h3>You need to scroll down to go to the another page</h3>
+                <p>Most websites provide a pagination below the content. So the user has first to scroll down to navigate to the next page. Image you would do the same with the main navigation. This is very bad practice.
+                </p>
+
+                <h3>What awaits you on this page? Will you find the contents you were looking for?</h3>
+                <p>When you click on a pagination link, you have to wait for the new page to load and scan the page if your desired content is there.</p>
+                <p>If it isn´t there you have to go to the next page, wait, scan, etc.</p>
+                <h2>
+                    So how can we fix those problems?
+                </h2>
+                <ol>
+                    <li>
+                        It´s better to provide a pagination below AND above the content. So the users don´t have to scroll down the whole page, just to to go another one.
+                    </li>
+                    <li>Provide a scrollable pagination, so the user can
+                        <em>directly</em> go to the page he wants.</li>
+                    <li>Show a preview of the contents (for example headlines)</li>
+                </ol>
+                <p>Some years ago the idea to use a slider-based navigation with ajax tooltips came into my mind.</p>
+                <p>So i developed this plugin in 2012 but never released it. But now its time has come to shine!</p>
+
+
+            <h3>What about touch devices?</h3>
+            <p>
+                The tooltips are used best on desktop browsers as they appear on hover. Touch devices don´t support hover events. What to do about it? Show the tooltip on the first click and if one clicks again redirerect him to the page? That is not what the user expects. Don´t show anything, just go to the page? I need your help to develop a good idea for this.
+            </p>
+			
+        </div>
+    </section>
+
+<section id="installation">
+	<div class="container">
+		<h2>Installation</h2>
+        <script src="https://gist.github.com/jmar/4c3daaeffd30d06ecc54.js"></script>
+		<p>or <a href="https://github.com/jmar/rethinkpagination">clone it from github</a></p>
+
+        <p>Add the stylesheet to your head
+        <script src="https://gist.github.com/jmar/3bd5cead430cf2a3ee84.js"></script><link rel="stylesheet" href="styles/rethinkpagination.css">
+      </p>
+        <p>In the foot of your web page before the closing body tag:</p>
+        <script src="https://gist.github.com/jmar/e18621041e1461a43e70.js"></script>
+
+        <p>You can also call rethinkpagination with options as an object:</p>
+
+        <script src="https://gist.github.com/jmar/4db7f21288dca49d8f2e.js"></script>
+
+		            <h3>Requirements</h3>
+		            <p>
+		                jQuery >= 1.7
+		            </p>
+		            <h3>but you can spice up the script with</h3>
+		            <ul>
+		                <li><a href="https://github.com/daneden/animate.css">animate.css - CSS3 animation for the tooltip (some more than the default i provided)</a>
+		                </li>
+		                <li><a href="https://github.com/Darsain/sly/">sly (JavaScript library for one-directional scrolling with item based navigation support)</a>
+		                </li>
+		                <li><a href="https://github.com/brandonaaron/jquery-mousewheel">jQuery-mouseWheel</a>
+		                </li>
+		            </ul>
+
+		            			<h3>Updates</h3>
+		                        <p>
+		                        	I only maintain this plugin in my spare time, so if you want to make it better, please fork it on github and send me a pull-request.
+		                        </p>
+		                        <p>
+		                        	Also you can write improvements in the issues tracker on github.
+		                        </p>
+        <p>If you need quick fixes or custom programming you can pay me and i develop to your needs.</p>
+		                        <h3>Possible Future Features</h3>
+		                        <ul>
+		                            <li>
+		                                Generate pagination out of an json object, to produce less overhead. Use micro-templating eninge for that.
+
+		                            </li>
+		                            <li>
+		                                add rel="next" and rel="prev" to the links
+
+		                            </li>
+		                            <li>
+		                                Add clickable (on non touch devices) and swipeable (on touch devices) overlays to the left and right of the page, so you can easily go to the corresponding page
+		                            </li>
+		                            <li>Recalculate pagination slider on window resize</li>
+		                            <li>
+		                                Tooltip position should take page dimensions into account
+		                            </li>
+		                        </ul>
+	</div>
+</section>
+
+<section class="gray" id="options">
+<div class="container">
+
+		<h2>
+			Options:
+		</h2>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Type</th>
+					<th>default</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>selector</td>
+					<td><span class="label label-default">String</span></td>
+					<td>h2</td>
+					<td>Get which selectors on the target page</td>
+				</tr>
+				<tr>
+					<td>animation</td>
+					<td><span class="label label-default">String</span></td>
+					<td>fadeInDown</td>
+					<td>classname for the CSS3 animation that gets added to the tooltip</td>
+				</tr>
+				<tr>
+					<td>timeout</td>
+					<td><span class="label label-default">Integer</span></td>
+					<td>250</td>
+					<td>Timeout in ms when the tooltip should be triggered. This is to prevent unintendent triggering of the tooltips. Altough this is a very simple solution. You could use jquery hoverIntent for better handling, but support for that has to be added first</td>
+				</tr>
+
+			</tbody>
+		</table>
+</div>
+</section>
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- build:js scripts/rethinkpagination.min.js -->
+    <script src="scripts/rethinkpagination.js"></script>
+    <!-- endbuild -->
+    <script src="scripts/sly/dist/sly.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

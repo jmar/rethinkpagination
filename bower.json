@@ -1,0 +1,11 @@
+{
+  "name": "rethinkpagination",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "~1.10.0",
+    "animate.css": "~2.1.0",
+    "modernizr": "~2.8.2"
+  },
+  "devDependencies": {}
+}
