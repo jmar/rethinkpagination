@@ -2,10 +2,10 @@
     "name": "rethinkpagination",
     "version": "1.0.0",
     "dependencies": {
-        "jquery": "~1.10.0",
-        "animate.css": "~2.1.0"
+        "jquery": "~1.10.0"
     },
     "devDependencies": {
+        "animate.css": "~2.1.0",
         "sly": "~1.2.3",
         "bootstrap": "~3.0.3",
         "modernizr": "~2.8.2"
