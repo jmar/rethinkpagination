@@ -1,8 +1,10 @@
 # 
 # [rethinkpagination](http://jensmartsch.de/rethinkpagination)
 
-## Scrollable Pagination with previews of the content of the page you would like to visit. 
-## This is UX design principle accompanied by a jquery plugin.
+## Scrollable Pagination with previews of the content of the page you would like to visit.  This is UX design principle accompanied by a jquery plugin.
+
+## Demo
+http://jensmartsch.de/rethinkpagination
 
 ## Installation
 
