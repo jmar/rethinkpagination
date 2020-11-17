@@ -1,4 +1,7 @@
-# 
+# WARNING: This repository is no longer maintained :warning:
+
+> This repository will not be updated. The repository will be kept available in read-only mode.
+
 # [rethinkpagination](http://jensmartsch.de/rethinkpagination)
 
 ## Scrollable Pagination with previews of the content of the page you would like to visit.  This is UX design principle accompanied by a jquery plugin.
